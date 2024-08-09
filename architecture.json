@@ -22,5 +22,9 @@
     {
         "level": 1,
         "task_description": "This is the user's previous chat history with this AI:\n\nUser: change the background to be dark brown\nAI: I'll work on changing the background to dark brown!\nUser: it doesn't look dark brown to me. Try again\nAI: Alright, I'll make the necessary adjustments for you.\nUser: change the background to be brown\nThis is the user's current request of changes to be made: change this background to be brown"
+    },
+    {
+        "level": 1,
+        "task_description": "This is the user's previous chat history with this AI:\n\nUser: change the background to be dark brown\nAI: I'll work on changing the background to dark brown!\nUser: it doesn't look dark brown to me. Try again\nAI: Alright, I'll make the necessary adjustments for you.\nUser: change the background to be brown\nThis is the user's current request of changes to be made: change this background to be brown"
     }
 ]
