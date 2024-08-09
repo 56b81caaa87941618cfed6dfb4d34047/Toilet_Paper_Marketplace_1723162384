@@ -36,5 +36,11 @@
         "content": "Alright, I'll make the necessary adjustments for you.",
         "timestamp": "09082024001529",
         "message_id": "guest09082024001529"
+    },
+    {
+        "role": "user",
+        "content": "change the background to be brown",
+        "timestamp": "09082024035010",
+        "message_id": "guest09082024035010"
     }
 ]
