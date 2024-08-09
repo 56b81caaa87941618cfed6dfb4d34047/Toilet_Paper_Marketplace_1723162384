@@ -10,5 +10,9 @@
     {
         "level": 1,
         "task_description": "\n        You previously did not make a code change correctly.\n        You now have one more chance to complete the user's previous request. This is your last chance to make the code change correctly.\n        This is the user's original request: it doesn't look dark brown to me. Try again\n        This is the current message they have sent: it doesn't look dark brown to me. Try again\n        This is the HTML element ID of the component to be fixed: \n        This is the file name where the component resides: purple_header_component_1723162386\n        \n        Instructions : Now, make sure you implement the user's request very carefully.\n        "
+    },
+    {
+        "level": 1,
+        "task_description": "This is the user's previous chat history with this AI:\n\nUser: change the background to be dark brown\nAI: I'll work on changing the background to dark brown!\nUser: it doesn't look dark brown to me. Try again\nAI: Alright, I'll make the necessary adjustments for you.\nThis is the user's current request of changes to be made: change the background to be brown"
     }
 ]
