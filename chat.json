@@ -1,5 +1,14 @@
 [
     {
+        "role": "chat_qna",
+        "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"For the purchasing form, what key details do you want to capture from the user (e.g., quantity, shipping address)?\", \"option1\": \"Just the basic details like quantity and contact information.\", \"option2\": \"Include detailed fields such as quantity, type of toilet paper, shipping address, and preferred payment method.\"}, {\"question 2\": \"Regarding the brown theme, do you have a specific shade in mind or should we select a shade that ensures readability and user comfort?\", \"option1\": \"Please choose a dark brown shade that complements the design for better readability.\", \"option2\": \"Select any brown shade that best fits the overall design aesthetics of the app.\"}], \"input_token_count\": 431, \"output_token_count\": 152, \"time_taken\": \"0:00:05.044277\"}",
+        "message_id": "guest09082024035248",
+        "timestamp": "09082024035254",
+        "component_file_name": "dark_footer_component_1723162386",
+        "div_id": "",
+        "div_action": ""
+    },
+    {
         "role": "chat_acknowledge",
         "content": "Sure, I understand that you want a thorough purchasing form for toilet paper with a brown theme and I'm currently working on it.",
         "message_id": "guest09082024035248",
