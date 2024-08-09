@@ -1,52 +1,68 @@
-/* Summary: The section has a blurred radial gradient background and a call-to-action (CTA) content block.
-It is centered on the page and includes a gradient-based title, a subtitle, a paragraph of text, and a button with a gradient background.
-*/
-
 Vue.component("purple_background_cta_component_1723162386", {
     template: `
-    <section id="cta-section-container">
-        <div id="section-container" class="max-w-6xl mx-auto px-4 sm:px-6 bg-brown-900">
-            <div id="content-container" class="relative px-8 py-12 md:py-20 rounded-3xl overflow-hidden bg-brown-800">
-                <!-- Radial gradient -->
-                <div id="radial-gradient" class="absolute flex items-center justify-center top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/3 aspect-square" aria-hidden="true">
-                    <div id="radial-gradient-outer" class="absolute inset-0 translate-z-0 rounded-full blur-[120px] opacity-70" :class="radialGradientPrimaryStyle"></div>
-                    <div id="radial-gradient-inner" class="absolute w-1/4 h-1/4 translate-z-0 rounded-full blur-[40px]" :class="radialGradientSecondaryStyle">
-                    </div>
+    <section id="cta-section-container" class="bg-brown-100 min-h-screen flex items-center justify-center">
+        <div id="section-container" class="max-w-2xl mx-auto p-8 bg-brown-200 rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-brown-800 mb-6 text-center">Toilet Paper Purchase Form</h2>
+            <form @submit.prevent="submitForm" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-brown-700 font-medium mb-2">Name</label>
+                    <input type="text" id="name" v-model="form.name" required class="w-full px-4 py-2 rounded-lg border border-brown-300 focus:outline-none focus:ring-2 focus:ring-brown-500">
                 </div>
-                <!-- Blurred shape -->
-                <div id="blurred-shape" class="absolute bottom-0 translate-y-1/2 left-0 blur-2xl opacity-50 pointer-events-none -z-10" aria-hidden="true">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="434" height="427">
-                        <defs><linearGradient id="bs5-a" x1="19.609%" x2="50%" y1="14.544%" y2="100%"><stop offset="0%" :stop-color="stopColorPrimaryStyle" /><stop offset="100%" :stop-color="stopColorSecondaryStyle" stop-opacity="0" /></linearGradient></defs>
-                        <path fill="url(#bs5-a)" fill-rule="evenodd" d="m0 0 461 369-284 58z" transform="matrix(1 0 0 -1 0 427)" />
-                    </svg>
+                <div>
+                    <label for="email" class="block text-brown-700 font-medium mb-2">Email</label>
+                    <input type="email" id="email" v-model="form.email" required class="w-full px-4 py-2 rounded-lg border border-brown-300 focus:outline-none focus:ring-2 focus:ring-brown-500">
                 </div>
-                <!-- Content -->
-                <div id="content" class="max-w-3xl mx-auto text-center">
-                    <div id="content-subtitle" class="flex"><div id="content-subtitle-text" class="flex-1 font-medium bg-clip-text pb-3" :class="[transparentTextStyle, contentSubtitleStyle]">Your One-Stop Shop for Toilet Paper Trading</div></div>
-                    <div class="flex" id="content-title-container"><h2 id="content-title" class="flex-1 h2 bg-clip-text pb-4" :class="[transparentTextStyle, contentCtaTitleStyle]"> Roll into Profits: The TP Exchange</h2></div>
-                    <div class="flex" id="content-body-container"><p id="content-body" class="flex-1 text-lg mb-8" :class="[contentBodyStyle]">Navigate the peaks and valleys of the toilet paper market with our cutting-edge trading platform. Whether you're a seasoned TP trader or just starting out, our app provides real-time analytics, roll-to-roll comparisons, and instant transactions.</p></div>
-                    <a id="content-cta-button" href="#0" class="btn transition duration-150 ease-in-out group" :class="[contentCtaButtonPrimaryStyle, contentCtaButtonGradientStyle, contentCtaButtonGradientStyle, contentCtaButtonHoverStyle]">Get Started <span id="content-cta-arrow" class="tracking-normal group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1" :class="contentCtaArrowStyle">-&gt;</span></a>
+                <div>
+                    <label for="quantity" class="block text-brown-700 font-medium mb-2">Quantity (rolls)</label>
+                    <input type="number" id="quantity" v-model="form.quantity" required min="1" class="w-full px-4 py-2 rounded-lg border border-brown-300 focus:outline-none focus:ring-2 focus:ring-brown-500">
                 </div>
-            </div>
+                <div>
+                    <label for="type" class="block text-brown-700 font-medium mb-2">Type</label>
+                    <select id="type" v-model="form.type" required class="w-full px-4 py-2 rounded-lg border border-brown-300 focus:outline-none focus:ring-2 focus:ring-brown-500">
+                        <option value="1-ply">1-ply</option>
+                        <option value="2-ply">2-ply</option>
+                        <option value="3-ply">3-ply</option>
+                        <option value="4-ply">4-ply</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="address" class="block text-brown-700 font-medium mb-2">Delivery Address</label>
+                    <textarea id="address" v-model="form.address" required rows="3" class="w-full px-4 py-2 rounded-lg border border-brown-300 focus:outline-none focus:ring-2 focus:ring-brown-500"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="w-full bg-brown-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-brown-700 transition duration-300">
+                        Purchase Toilet Paper
+                    </button>
+                </div>
+            </form>
         </div>
-    </section>`,
-        data() {
-            return {
-                expanded: false, 
-                tab: null,
-                radialGradientPrimaryStyle: "bg-brown-700",
-                radialGradientSecondaryStyle: "bg-brown-600",
-                stopColorPrimaryStyle: "#8B4513",
-                stopColorSecondaryStyle: "#A0522D",
-                transparentTextStyle: "text-transparent",
-                contentSubtitleStyle: "bg-gradient-to-r from-brown-700 to-brown-400",
-                contentCtaTitleStyle: "bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60",
-                contentBodyStyle: "text-slate-400",
-                contentCtaButtonPrimaryStyle:"text-slate-900",
-                contentCtaButtonGradientStyle: "bg-gradient-to-r from-white/80 via-white to-white/80",
-                contentCtaButtonHoverStyle: "hover:bg-white",
-                contentCtaArrowStyle: "text-brown-500"
+    </section>
+    `,
+    data() {
+        return {
+            form: {
+                name: '',
+                email: '',
+                quantity: 1,
+                type: '2-ply',
+                address: ''
+            }
+        };
+    },
+    methods: {
+        submitForm() {
+            // Handle form submission here
+            console.log('Form submitted:', this.form);
+            // You would typically send this data to a server
+            alert('Thank you for your order!');
+            // Reset form after submission
+            this.form = {
+                name: '',
+                email: '',
+                quantity: 1,
+                type: '2-ply',
+                address: ''
             };
-        },
-    });
-                    
+        }
+    }
+});
