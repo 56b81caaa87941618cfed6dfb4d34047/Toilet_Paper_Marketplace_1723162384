@@ -1,6 +1,6 @@
 Vue.component("purple_background_cta_component_1723162386", {
     template: `
-    <section id="cta-section-container" style="min-height: 270px" class="bg-blue-900 min-h-screen flex items-center justify-center">
+    <section id="cta-section-container" style="min-height: 670px"  class="bg-blue-900 min-h-screen flex items-center justify-center">
         <div id="section-container" class="max-w-2xl mx-auto p-8 bg-blue-800 rounded-xl shadow-lg border border-purple-500">
             <h2 class="text-3xl font-bold text-purple-300 mb-6 text-center">Toilet Paper Purchase Form</h2>
             <form @submit.prevent="submitForm" class="space-y-6">
