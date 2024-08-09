@@ -1,5 +1,14 @@
 [
     {
+        "role": "chat_qna",
+        "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"Do you have a specific shade of brown in mind for the background?\", \"option1\": \"Yes, I can provide a hex color code.\", \"option2\": \"No, a general brown shade is fine.\"}, {\"question 2\": \"Would you like the brown background to be applied across all pages of the website or only specific sections/pages?\", \"option1\": \"Across all pages\", \"option2\": \"Only specific sections/pages\"}], \"input_token_count\": 341, \"output_token_count\": 103, \"time_taken\": \"0:00:04.051206\"}",
+        "message_id": "guest09082024035038",
+        "timestamp": "09082024035043",
+        "component_file_name": "purple_background_cta_component_1723162386",
+        "div_id": "",
+        "div_action": ""
+    },
+    {
         "role": "chat_acknowledge",
         "content": "Got it, I will change the background color to brown.",
         "message_id": "guest09082024035038",
