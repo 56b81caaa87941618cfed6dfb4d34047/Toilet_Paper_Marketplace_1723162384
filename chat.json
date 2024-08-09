@@ -1,5 +1,14 @@
 [
     {
+        "role": "user",
+        "content": "change the background to be brown",
+        "message_id": "guest09082024035010",
+        "timestamp": "09082024035010",
+        "component_file_name": "purple_header_component_1723162386",
+        "div_id": "",
+        "div_action": ""
+    },
+    {
         "role": "chat_acknowledge",
         "content": "Alright, I'll make the necessary adjustments for you.",
         "message_id": "guest09082024001529",
