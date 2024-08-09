@@ -30,5 +30,11 @@
         "content": "it doesn't look dark brown to me. Try again",
         "timestamp": "09082024001529",
         "message_id": "guest09082024001529"
+    },
+    {
+        "role": "chat_acknowledge",
+        "content": "Alright, I'll make the necessary adjustments for you.",
+        "timestamp": "09082024001529",
+        "message_id": "guest09082024001529"
     }
 ]
